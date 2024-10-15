@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+  <title>chatgpt</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="profile-header">
+        <a href="#" class="back-button" onclick="location.reload();">&lt;</a>
+        <div class="profile-info">
+          <img src="/images/chat.png" alt="chatgptImg" class="profile-img">
+          <span class="profile-name">GPT</span>
+        </div>
+        <div class="status-icons">
+        <time id="updateTime" datetime="2024-06-04T19:40">19:40</time>
+        <span class="side">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-three-quarters"></i>
+        </span>
+        </div>
+      </div>
+    </header>
+    
+    <section class="chaat">
+      <h2 class="sr-only">채팅창</h2>
+      <div class="dialog">
+        <ul>
+          <!-- <li style="text-align: right;"><span style="background-color: green;">안녕 나는 예림이야.</span></li>
+          <li><span>반가워 나는 GPT야.</span></li>
+          <li style="text-align: right;"><span style="background-color: gold;">점심먹었어?</span></li>
+          <li><span>나는 프로그램이기 때문에 밥은 먹지않아.</span></li> -->
+        </ul>
+      </div>
+
+      <form name="frmMsg">
+        <fieldset>
+          <label for="msg" class="sr-only">메세지</label>
+          <input type="text" name="msg" id="msg" placeholder="메세지를 입력하세요" autofocus required autocomplete="off">
+          <button class="send">전송</button>
+          <button type="button" class="refresh" onclick="location.reload();">새로고침</button>
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+      <address>&copy; Develop by Leeyerim</address>
+    </footer>
+  </div>
+
+  <script src="/js/function.js"></script>
+</body>
+</html>

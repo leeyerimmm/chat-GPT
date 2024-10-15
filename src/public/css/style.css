@@ -1,0 +1,315 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#wrap {
+  width: 100%;
+  max-width: 360px;
+  height: 640px;
+  border: 12px solid #ccc;
+  border-top: 48px solid #ccc;
+  border-bottom: 48px solid #ccc;
+  border-radius: 36px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header > .profile-header {
+  position: relative;
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+header > .profile-header > .back-button {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  font-weight: 600;
+  font-size: 23px;
+  color: #007bff;
+}
+header > .profile-header > .profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+header > .profile-header > .profile-info > .profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header > .profile-header > .profile-info > .profile-name {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+header > .profile-header .status-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+header > .profile-header .status-icons > #updateTime {
+  flex: 0 0 auto;
+  margin-right: auto;
+  font-size: 14px;
+  font-weight: 600;
+}
+header > .profile-header .status-icons > .side {
+  display: flex;
+  align-items: center;
+}
+header > .profile-header .status-icons > .side > i {
+  margin-left: 8px;
+}
+
+section {
+  width: 100%;
+  height: calc(100% - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section > .dialog {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 7px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.07);
+}
+section > .dialog li {
+  margin-top: 8px;
+}
+section > .dialog li > span {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 18px;
+  max-width: 80%;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+section form > fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+section form > fieldset > input {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 13px;
+  background-color: #fff;
+}
+section form > fieldset > input:focus {
+  border-color: #34c759;
+}
+section form > fieldset .send, section form > fieldset .refresh {
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+section form > fieldset button.send {
+  background-color: #34c759;
+}
+section form > fieldset button.send:hover {
+  background-color: #28a745;
+}
+section form > fieldset button.refresh {
+  background-color: #007bff;
+}
+section form > fieldset button.refresh:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #d9d9d9;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer > address {
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  #wrap {
+    width: 100%;
+    max-width: 360px;
+    height: 640px;
+    border: 12px solid #ccc;
+    border-top: 48px solid #ccc;
+    border-bottom: 48px solid #ccc;
+    border-radius: 36px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  header > .profile-header {
+    position: relative;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  header > .profile-header > .back-button {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    font-weight: 600;
+    font-size: 23px;
+    color: #007bff;
+  }
+  header > .profile-header > .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+  }
+  header > .profile-header > .profile-info > .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header > .profile-header > .profile-info > .profile-name {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  header > .profile-header .status-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  header > .profile-header .status-icons > #updateTime {
+    flex: 0 0 auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  header > .profile-header .status-icons > .side {
+    display: flex;
+    align-items: center;
+  }
+  header > .profile-header .status-icons > .side > i {
+    margin-left: 8px;
+  }
+  section {
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section > .dialog {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 7px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.07);
+  }
+  section > .dialog li {
+    margin-top: 8px;
+  }
+  section > .dialog li > span {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 18px;
+    max-width: 80%;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  section form > fieldset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  section form > fieldset > input {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    background-color: #fff;
+  }
+  section form > fieldset > input:focus {
+    border-color: #34c759;
+  }
+  section form > fieldset .send, section form > fieldset .refresh {
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  section form > fieldset button.send {
+    background-color: #34c759;
+  }
+  section form > fieldset button.send:hover {
+    background-color: #28a745;
+  }
+  section form > fieldset button.refresh {
+    background-color: #007bff;
+  }
+  section form > fieldset button.refresh:hover {
+    background-color: #0056b3;
+  }
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #d9d9d9;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  footer > address {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
