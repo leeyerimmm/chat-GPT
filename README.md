@@ -43,6 +43,6 @@ OpenAI를 활용하여 리뉴얼한 나만의 ChatGPT
 <br><br>
 
 ## 4. Site Link (사이트 링크)
-
+http://52.79.90.131:5300/
 
 <br><br>
